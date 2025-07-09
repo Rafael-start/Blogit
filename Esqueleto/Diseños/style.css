@@ -1,0 +1,108 @@
+/* Base */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #fefbe9;
+    color: #4e342e;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #a1887f;
+    color: #fff8e1;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 4px solid #6d4c41;
+    background-image: url('/assets/textura-madera.jpg'); /* opcional si tienes textura */
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* Navegación */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fffde7;
+    font-weight: bold;
+    background-color: #8d6e63;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.main-nav a:hover {
+    background-color: #6d4c41;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+article {
+    background-color: #fff8e1;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 6px solid #a1887f;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+article h2 {
+    color: #6d4c41;
+}
+
+/* Aside */
+aside {
+    background-color: #ede0d4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-left: 4px solid #a1887f;
+}
+
+aside a {
+    color: #5d4037;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #6d4c41;
+    color: #fff8e1;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
