@@ -1,108 +1,153 @@
-/* Base */
-body {
+/* ----------- RESET BÁSICO ----------- */
+* {
     margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #fefbe9;
-    color: #4e342e;
-    line-height: 1.6;
-}
-
-/* Encabezado */
-header {
-    background-color: #a1887f;
-    color: #fff8e1;
-    padding: 30px;
-    text-align: center;
-    border-bottom: 4px solid #6d4c41;
-    background-image: url('/assets/textura-madera.jpg'); /* opcional si tienes textura */
-    background-size: cover;
-    background-position: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.8em;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
-}
-
-/* Navegación */
-.main-nav ul {
-    list-style: none;
     padding: 0;
-    margin: 15px 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+    box-sizing: border-box;
 }
 
-.main-nav a {
-    text-decoration: none;
-    color: #fffde7;
-    font-weight: bold;
-    background-color: #8d6e63;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.main-nav a:hover {
-    background-color: #6d4c41;
-}
-
-/* Contenido principal */
-main {
-    max-width: 900px;
-    margin: 40px auto;
+/* ----------- FUENTE Y COLORES ----------- */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    color: #333;
     padding: 0 20px;
 }
 
-article {
-    background-color: #fff8e1;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-left: 6px solid #a1887f;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+h2, h3 {
+    color: #005f73;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-article h2 {
-    color: #6d4c41;
-}
-
-/* Aside */
-aside {
-    background-color: #ede0d4;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    border-left: 4px solid #a1887f;
-}
-
-aside a {
-    color: #5d4037;
+a {
+    color: #0077b6;
     text-decoration: none;
 }
 
-aside a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    background-color: #6d4c41;
-    color: #fff8e1;
+/* ----------- HEADER ----------- */
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 30px 0;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    font-size: 0.9em;
 }
 
-article img {
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.main-nav a {
+    color: white;
+    font-weight: bold;
+}
+
+/* ----------- MAIN CONTENT ----------- */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+article, section, aside {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
     width: 100%;
     height: auto;
-    margin: 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
+/* ----------- GALERÍA ----------- */
+section h2 + div {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ----------- FORMULARIOS ----------- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+/* ----------- FOOTER ----------- */
+footer {
+    background-color: #023047;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 40px;
+    border-top: 5px solid #0077b6;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ----------- BLOQUEQUOTE ----------- */
+blockquote {
+    background-color: #e0f7fa;
+    border-left: 5px solid #0077b6;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
+/* ----------- textos ----------- */
+p {
+    margin-bottom: 12px;
+}

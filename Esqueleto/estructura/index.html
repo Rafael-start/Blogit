@@ -4,41 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="VivePuntaCanoa - Descubre la belleza de Punta Canoa, un lugar ideal para disfrutar de la naturaleza y la tranquilidad.">
+    <!-- SEO para la zona social basico -->
+    <meta property="og:title" content="VivePuntaCanoa">
+    <meta property="og:description" content="Descubre la belleza de Punta Canoa, un lugar ideal para disfrutar de la naturaleza y la tranquilidad.">
+    <meta property="og:url" content="https://www.vivepuntacanoa.com">    
     <link rel="stylesheet" href="/Esqueleto/Diseños/style.css">
     <title>VivePuntaCanoa</title>
 </head>
+
 <body>
-    <header>
+
+    <header role="banner">
         
-    <h1>VivePuntaCanoa</h1>
-    <nav class="main-nav">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Enterate de mas</a></li>
-        </ul>
-    </nav>
+        <h1>VivePuntaCanoa</h1>
+        <nav class="main-nav" role="navigation" aria-label="Menu principal">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Enterate de mas</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+
+    <main role="main">
+
         <article>
             <h2>Bienvenido a VivePuntaCanoa</h2>
-            <img src="/Esqueleto/fotos/Captura de pantalla 2025-07-06 215117.png" alt="Vista de la playa de Punta Canoa">
+            <img src="/Esqueleto/fotos/Captura de pantalla 2025-07-06 215144.png" alt="Vista de Punta Canoa" width="600" height="400">
             <p>Descubre la belleza de Punta Canoa, un lugar ideal para disfrutar de la naturaleza y la tranquilidad.</p>
             <p>Para más información, visita nuestro sitio web o contáctanos directamente.</p>
         </article>
+
         <article>
             <h2>Ven y conoce más sobre nosotros</h2>
-             <img src="/Esqueleto/fotos/Captura de pantalla 2025-07-06 215144.png" alt="Actividad cultural en Punta Canoa">
+            <img src="/Esqueleto/fotos/Captura de pantalla 2025-07-06 215126.png" alt="Imagen representativa de VivePuntaCanoa" width="600" height="400">
             <p>En VivePuntaCanoa, nos apasiona compartir la belleza y la cultura de nuestra región. Ofrecemos una variedad de actividades y servicios para que disfrutes al máximo tu visita.</p>
         </article>
-        <aside>
-            <h3>Información de Contacto</h3>
-            <p><a href="tel:3215458097">Telefono</a></p>
-            <p><a href="mailto:rafaelarceleal@gmail.com">Email</a></p>
+
+        <section>
+            <h2>¿Qué hacer en Punta Canoa?</h2>
+            <ul>
+                <li>Disfrutar de la playa y el sol</li>
+                <li>Explorar los senderos naturales</li>
+                <li>Visitar el mirador para una vista panorámica</li>
+                <li>Participar en actividades acuáticas</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Galeria</h2>
+            <div>
+                <img src="/Esqueleto/fotos/Captura de pantalla 2025-07-06 215144.png" alt="Vista de la playa y la naturaleza">
+                <img src="/Esqueleto/fotos/Captura de pantalla 2025-07-06 215126.png" alt="Foto desde el mirador">
+                <img src="/Esqueleto/fotos/Captura de pantalla 2025-07-06 215144.png" alt="Foto del parque natural">
+            </div>
+        </section>
+
+        <aside role="complementary">
+            <h2>Información de Contacto</h2>
+            <p><a href="tel:111555333">Teléfono</a></p>
+            <p><a href="mailto:puntacanoa@vivepuntacanoa.com">Email</a></p>
+
+            <h2>Contáctanos</h2>
+            <form action="mailto:vivepuntacanoa@vivepuntacanoa.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
         </aside>
+
+        <section>
+            <h2>Ubicación</h2>
+            <p>Punta Canoa se encuentra en la costa caribeña de Colombia, cerca de Cartagena. Es un destino ideal para quienes buscan escapar del bullicio de la ciudad y disfrutar de la naturaleza.</p>   
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.471248276277!2d-75.5090001!3d10.5460085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef61ccfd6f6b9ad%3A0xa4f3b6225674e1ee!2sPunta%20Canoa%2C%20Cartagena!5e0!3m2!1ses!2sco!4v1689463490703"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    <section>
+        <h2>Testimonios</h2>
+        <blockquote>
+            <p>"Un lugar maravilloso para relajarse y disfrutar de la naturaleza."</p>
+            <footer>-Juan Pérez, Bogotá</footer>
+        </blockquote>
+
+        <blockquote>
+            <p>"La mejor experiencia de mi vida, definitivamente volveré."</p>
+            <footer>-María López, Medellín</footer>
+        </blockquote>
+
+    </section>
+
+    <section>
+        <h2>Suscríbete a nuestro boletín</h2>
+        <form action="#" method="post" aria-label="Formulario de suscripción">
+            <label for="email-suscripcion">Correo electrónico:</label>
+            <input type="email" id="email-suscripcion" name="email" required>
+            <button type="submit">Suscribirme</button>
+        </form>
+    </section>
+
     </main>
-    <footer>
+
+    <hr>
+
+    <footer role="contentinfo">
+        <ul>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+        <p><a href="#">Política de Privacidad</a></p>
          <p>&copy; 2025 VivePuntaCanoa. Todos los derechos reservados.</p>
     </footer>
+
 </body>
+
 </html>
     
