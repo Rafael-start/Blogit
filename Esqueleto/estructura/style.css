@@ -127,6 +127,18 @@ footer ul {
     gap: 20px;
 }
 
+
+footer p a {
+    color: white;
+}
+
+
+.social-media a {
+    color: white;
+}
+
+
+
 /* ----------- BLOQUEQUOTE ----------- */
 blockquote {
     background-color: #e0f7fa;
